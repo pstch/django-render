@@ -41,7 +41,7 @@ class RenderNode(template.Node):
         template_list.append(make_template_name(
             model_name=meta.object_name.lower(),
             using=using,
-            prefix=render,
+            prefix=prefix,
             app=meta.app_label
         ))
 
@@ -49,18 +49,18 @@ class RenderNode(template.Node):
         template_list.append(make_template_name(
             model_name=meta.app_label,
             using=using,
-            prefix=render
+            prefix=prefix
         ))
 
         # '<prefix>/default[__<using>].html'
         template_list.append(make_template_name(
             using=using,
-            prefix=render
+            prefix=prefix
         ))
 
         # '<prefix>/default.html'
         template_list.append(make_template_name(
-            prefix=render
+            prefix=prefix
         ))
 
         # We probably want access to variables added by the context processors
