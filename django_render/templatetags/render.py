@@ -20,7 +20,7 @@ class RenderNode(template.Node):
         template_root = 'render/%s/%s' % (var._meta.app_label, 
                                           var._meta.object_name.lower())
         if self.using:
-            template_name = '%s__%s' % (template_root, self.using)
+            template_name = '%s__%s.html' % (template_root, self.using)
         else:
             template_name = '%s.html' % template_root
         template_list = [
@@ -55,7 +55,7 @@ def render(parser, token):
     If you'd like to use different templates in different areas of your
     site, you can do so with the ``using`` argument. For example::
         
-        {% render obj using long.html %}
+        {% render obj using long %}
 
     This will render the template ``render/[application_name]/[model_name]__long.html``
 
