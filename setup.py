@@ -1,8 +1,10 @@
 from setuptools import setup, find_packages
 
+from django_render import version
+
 setup(
     name='django-render',
-    version='0.1',
+    version=version,
     description='Render unknown Django model instances based on their content type.',
     author='Peter Baumgartner',
     author_email='pete@lincolnloop.com',
