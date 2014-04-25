@@ -31,6 +31,6 @@ For advanced usage see the docstring in ``django_render/templatetags/render.py``
 
 Acknowledgements
 ----------------
-This version was modified by pstch for a quick'n'dirty fix, all credits go to Lincoln Loop `lincolnloop <https://github.com/lincolnloop/>`_ !
+This version was modified by pstch for a quick'n'dirty fix, all credits go to `Lincoln Loop <https://github.com/lincolnloop/>`_ !
 
 Thanks to Jacob Kaplan-Moss' `Jellyroll <http://github.com/jacobian/jellyroll>`_ for the inspiration.
