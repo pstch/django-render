@@ -20,7 +20,7 @@ class RenderNode(template.Node):
                 "django-render needs a model instance to work with, no argument specified"
             )
 
-        meta = instance._meta.app
+        meta = instance._meta
         using = self.using
         prefix = self.prefix
 
