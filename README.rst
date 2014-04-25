@@ -10,7 +10,7 @@ Django render provides a template tag that works similar to an `inclusion tag <h
 Installation
 -------------
 
-1. ``pip install -e git+git://github.com:lincolnloop/django-render.git#egg=django-render``
+1. ``pip install -e git+git://github.com:pstch/django-render.git#egg=django-render``
 2. Add ``django_render`` to your ``INSTALLED_APPS``
 
 
@@ -31,5 +31,6 @@ For advanced usage see the docstring in ``django_render/templatetags/render.py``
 
 Acknowledgements
 ----------------
+This version was modified by pstch for a quick'n'dirty fix, all credits go to Lincoln Loop `lincolnloop <https://github.com/lincolnloop/>`_ !
 
 Thanks to Jacob Kaplan-Moss' `Jellyroll <http://github.com/jacobian/jellyroll>`_ for the inspiration.
