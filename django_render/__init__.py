@@ -7,7 +7,7 @@ generic relationships.
 """
 __title__ = 'django-render'
 __version__ = '0.1.1'
-__author__ = 'Lincoln Loop'
+__author__ = 'Peter Baumgartner'
 __license__ = 'See LICENSE file'
 __copyright__ = """Copyright (c) Lincoln Loop, LLC and individual contributors.
 All rights reserved."""
