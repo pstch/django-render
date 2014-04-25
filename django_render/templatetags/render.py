@@ -115,9 +115,9 @@ znnnn
     biter = iter(bits[2:])
     for bit in biter:
         if bit == "using":
-            args["using"] = biter.next()
+            args["using"] = next(biter)
         if bit == "prefix":
-            args["prefix"] = biter.next()
+            args["prefix"] = next(biter)
         else:
             raise template.TemplateSyntaxError("%r tag got an unknown argument: %r" % (bits[0], bit))
 
