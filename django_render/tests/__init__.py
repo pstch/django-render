@@ -45,7 +45,7 @@ class OutputTagTest(TagTestCase):
         original_tmpldirs = settings.TEMPLATE_DIRS
         settings.TEMPLATE_DIRS += (self.test_templates,) 
         tmpl = "{% load render %}"\
-                   "{% render user using custom.html %}"
+                   "{% render user using custom %}"
         o = self.renderTemplate(tmpl, user=self.user)
         self.assertEqual(o.strip(), 'this is a custom template for user test')
         settings.TEMPLATE_DIRS = original_tmpldirs
@@ -53,7 +53,7 @@ class OutputTagTest(TagTestCase):
     def testMissingCustomTemplate(self):
         "Missing templates revert to default template"
         tmpl = "{% load render %}"\
-                   "{% render user using missing.html %}"
+                   "{% render user using missing %}"
         o = self.renderTemplate(tmpl, user=self.user)
         self.assertEqual(o.strip(), '<a href="/users/test/">test</a>')
         
